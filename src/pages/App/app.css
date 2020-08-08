@@ -67,14 +67,15 @@ input:not([type="checkbox"]) {
 .todo-item--completed:after {
   content: "Completed";
   position: absolute;
-  top: -1.5rem;
-  left: 0;
   background-color: #000;
   font-size: 0.9rem;
   letter-spacing: 1px;
+  top: -1.5rem;
+  left: 0;
   color: #fff;
   padding: 0.2rem;
   font-weight: 500;
+  animation: completed 200ms alternate;
 }
 
 .todo-item .actions {
@@ -92,4 +93,18 @@ input:not([type="checkbox"]) {
   align-items: center;
   justify-content: center;
   font-size: 0.78rem;
+}
+
+@keyframes completed {
+  0% {
+    z-index: -9;
+    opacity: 0;
+    top: 0.8rem;
+  }
+  100% {
+    top: -1.5rem;
+    left: 0;
+    opacity: 1;
+    z-index: -1;
+  }
 }
