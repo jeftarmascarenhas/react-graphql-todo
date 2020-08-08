@@ -9,7 +9,7 @@ interface HeaderProps {
 const Header: React.FC<HeaderProps> = ({ addTodo }) => {
   return (
     <div>
-      <h1>Todos</h1>
+      <h1>To do List React and GraphQL</h1>
       <Input
         newTodo
         onSave={(text: string): void => {
