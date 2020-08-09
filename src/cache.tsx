@@ -21,6 +21,13 @@ const todoStorage = window.localStorage.getItem("todos");
 
 const getTodos: Todos = todoStorage ? JSON.parse(todoStorage) : [];
 
-const todosInitialValue: Todos = [...getTodos];
+const todosInitialValue: Todos = [
+  {
+    id: 0,
+    text: "First Task",
+    completed: false,
+  },
+  ...getTodos,
+];
 
 export const todosVar: ReactiveVar<Todos> = makeVar<Todos>(todosInitialValue);

@@ -29,9 +29,17 @@ body {
   background-repeat: no-repeat;
   position: absolute;
   display: block;
-  bottom: 0rem;
+  bottom: 5rem;
   right: -3rem;
-  width: 100%;
-  max-width: 800px;
-  height: 400px;
+  width: 100vw;
+  max-width: 500px;
+  height: 70vh;
+  background-size: cover;
+}
+
+@media (min-width: 768px) {
+  #root::before {
+    bottom: 3rem;
+    max-width: 800px;
+  }
 }

@@ -25,7 +25,9 @@ const MainSection: React.FC = () => {
           />
         ))
       ) : (
-        <div className="todo-item-empty">Empty</div>
+        <div className="todo-item-empty">
+          <span>Empty</span>
+        </div>
       )}
     </div>
   );

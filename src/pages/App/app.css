@@ -1,8 +1,9 @@
 h1 {
-  font-size: 5rem;
-  font-weight: 500;
+  font-size: max(3.5vw, 3rem);
+  font-weight: 600;
   margin-bottom: 2rem;
   text-align: center;
+  text-transform: uppercase;
 }
 
 h2 {
@@ -51,12 +52,12 @@ input:not([type="checkbox"]) {
 }
 
 .todo-item {
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
   border: 1px solid transparent;
 }
 
 .todo-item span,
-.todo-item-empty {
+.todo-item-empty span {
   font-size: 1.55rem;
   font-weight: 300;
   flex: 1;
@@ -81,9 +82,7 @@ input:not([type="checkbox"]) {
   padding: 0.2rem;
   font-weight: 500;
   animation: completed 200ms alternate;
-}
-
-.todo-item .actions {
+  text-transform: uppercase;
 }
 
 .btn-close {
@@ -98,6 +97,7 @@ input:not([type="checkbox"]) {
   align-items: center;
   justify-content: center;
   font-size: 0.78rem;
+  cursor: pointer;
 }
 
 @keyframes completed {
