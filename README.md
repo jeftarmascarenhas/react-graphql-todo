@@ -1,10 +1,10 @@
 Todo React and GraphQL with Apollo Client 3
 
-The project is study's Global State Management with Apollo Client 3
+This project is study's Global State Management with Apollo Client 3
 
 I don't used Context API or Redux to Global State Management
 
-What is difference Redux, Context and Apollo Client
+What is difference between Redux, Context and Apollo Client
 
 
 Redux
@@ -42,7 +42,7 @@ You will also see any lint errors in the console.
 ### `yarn test`
 
 
-### Shortscreen
+## Shortscreen
 
 ![alt](./todos.png)
 
