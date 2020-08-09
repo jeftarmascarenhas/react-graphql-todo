@@ -14,3 +14,24 @@ body {
   font-family: "Roboto", sans-serif;
   font-size: 2rem;
 }
+
+#root {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow: hidden;
+}
+
+#root::before {
+  content: "";
+  background-image: url("assets/images/list.svg");
+  background-repeat: no-repeat;
+  position: absolute;
+  display: block;
+  bottom: 0rem;
+  right: -3rem;
+  width: 100%;
+  max-width: 800px;
+  height: 400px;
+}

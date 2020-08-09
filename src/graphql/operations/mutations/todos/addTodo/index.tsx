@@ -1,4 +1,4 @@
-import { Todo, Todos } from "../../../models/Todo";
+import { Todo, Todos } from "graphql/models/Todo";
 import { ReactiveVar } from "@apollo/client";
 
 export default function createAddTodo(todosVar: ReactiveVar<Todos>) {
